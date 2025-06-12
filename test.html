@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Undangan Pernikahan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: #f7f5f2;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    header {
+      height: 100vh;
+      background: url('https://source.unsplash.com/800x1200/?wedding') center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+    header h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3.5em;
+      margin: 0;
+      animation: fadeInDown 2s ease;
+    }
+    header p {
+      margin-top: 10px;
+      font-size: 1.2em;
+      animation: fadeInUp 2s ease;
+    }
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .section h2 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.2em;
+      margin-bottom: 10px;
+    }
+    .section p {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 10px;
+      padding: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    input, textarea, button {
+      padding: 10px;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background: #d32f2f;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background: #b71c1c;
+    }
+    footer {
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #777;
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Windi & Dena</h1>
+    <p>Kepada Yth. Melinda</p>
+  </header>
+
+  <section class="section" data-aos="fade-up">
+    <h2>Assalamu'alaikum Wr. Wb.</h2>
+    <p>Dengan memohon rahmat dan ridho Allah SWT, kami mengundang Anda untuk hadir di acara pernikahan kami.</p>
+  </section>
+
+  <section class="section" data-aos="fade-up">
+    <h2>Waktu & Tempat</h2>
+    <p>
+      Sabtu, 12 Juli 2025<br>
+      Gedung Serbaguna Cempaka, Bandung<br>
+      Akad Nikah: 08.00 WIB<br>
+      Resepsi: 11.00 - 14.00 WIB
+    </p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63344.0511379299!2d107.5991972!3d-6.9344696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e7c4d79f58d5%3A0x6bfbfb16c0a8b632!2sGedung%20Serbaguna%20Cempaka!5e0!3m2!1sid!2sid!4v1654509386165!5m2!1sid!2sid" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+  <section class="section" data-aos="fade-up">
+    <h2>Galeri</h2>
+    <div class="gallery">
+      <img src="https://source.unsplash.com/300x300/?wedding,couple" alt="Foto 1">
+      <img src="https://source.unsplash.com/301x300/?love" alt="Foto 2">
+      <img src="https://source.unsplash.com/302x300/?married" alt="Foto 3">
+      <img src="https://source.unsplash.com/303x300/?romantic" alt="Foto 4">
+    </div>
+  </section>
+
+  <section class="section" data-aos="fade-up">
+    <h2>Konfirmasi Kehadiran</h2>
+    <form action="#" method="post">
+      <input type="text" name="nama" placeholder="Nama Anda" required />
+      <textarea name="ucapan" placeholder="Ucapan atau doa..." rows="4"></textarea>
+      <button type="submit">Kirim</button>
+    </form>
+  </section>
+
+  <footer data-aos="fade-in">
+    &copy; 2025 Windi & Dena. Dibuat dengan ❤️ oleh Punakawan Digital.
+  </footer>
+
+  <audio autoplay loop>
+    <source src="https://example.com/background-music.mp3" type="audio/mpeg">
+    Browser Anda tidak mendukung pemutar audio.
+  </audio>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+</body>
+</html>
